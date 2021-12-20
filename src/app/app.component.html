@@ -1,0 +1,22 @@
+<h1>Hello, {{ data }}</h1>
+<h2>{{ add(2, 4) }}</h2>
+<header></header>
+<header></header>
+<button (click)="alert('areeb')">Click me to get an alert</button>
+<input type="text" #input (keyup)="getData(input.value)" />
+<input type="text" #input2 (keydown)="getData(input2.value)" />
+<input type="text" #input3 (blur)="getData(input3.value)" />
+
+<button (click)="counter('increment')">Decrement(--)</button>
+<p>Count: {{ count }}</p>
+<button (click)="counter('decrement')">Increment(++)</button>
+
+<app-user-lists></app-user-lists>
+<app-aboutus></app-aboutus>
+<app-country></app-country>
+<app-login></app-login>
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->
